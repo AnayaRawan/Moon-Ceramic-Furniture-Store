@@ -3,13 +3,22 @@
 @theme {
   --font-inter: "Inter";
   --font-heading: "EB Garamond";
-  --color-Primary-warm: rgba(58, 56, 69, 1);
-  --color-light:#FFFDFB;
+  --color-Primary-warm: #3a3845;
+  --color-light: #fffdfb;
 }
 
 .nav-link {
   @apply text-Primary-warm text-[14px] capitalize;
 }
-.product-name{
-  @apply font-semibold uppercase text-[18px] tracking-[6%] text-[#3A3845] pt-5.75;
+.product-name {
+  @apply font-semibold uppercase text-[18px] tracking-[6%] text-Primary-warm md:pt-5.75 pb-5;
+}
+.section-title {
+  @apply font-heading text-[30px] font-bold uppercase text-Primary-warm text-center pb-12;
+}
+.products-grid{
+  @apply grid gap-x-7.5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+}
+.product-title{
+  @apply font-semibold text-[14px] tracking-[6%] uppercase text-Primary-warm;
 }
