@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter";
+  --font-heading: "EB Garamond";
+  --color-Primary-warm: rgba(58, 56, 69, 1);
+  --color-light:#FFFDFB;
+}
+
+.nav-link {
+  @apply text-Primary-warm text-[14px] leading-5.5 capitalize;
+}
