@@ -7,14 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-50: oklch(98.2% 0.018 155.826);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -195,26 +192,14 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-  .ml-41 {
-    margin-left: calc(var(--spacing) * 41);
-  }
-  .ml-41\.25 {
-    margin-left: calc(var(--spacing) * 41.25);
-  }
-  .ml-\[162px\] {
-    margin-left: 162px;
-  }
-  .ml-\[165px\] {
-    margin-left: 165px;
-  }
   .block {
     display: block;
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .hidden {
     display: none;
@@ -228,9 +213,6 @@
   .h-88\.5 {
     height: calc(var(--spacing) * 88.5);
   }
-  .h-89 {
-    height: calc(var(--spacing) * 89);
-  }
   .h-99 {
     height: calc(var(--spacing) * 99);
   }
@@ -243,20 +225,11 @@
   .h-160\.5 {
     height: calc(var(--spacing) * 160.5);
   }
-  .h-\[354px\] {
-    height: 354px;
-  }
-  .h-\[392px\] {
-    height: 392px;
-  }
-  .h-\[398px\] {
-    height: 398px;
-  }
   .h-full {
     height: 100%;
   }
-  .w-105 {
-    width: calc(var(--spacing) * 105);
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-full {
     width: 100%;
@@ -267,8 +240,17 @@
   .resize {
     resize: both;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -282,6 +264,12 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
+  .gap-7\.5 {
+    gap: calc(var(--spacing) * 7.5);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -291,6 +279,9 @@
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -298,14 +289,11 @@
   .bg-\[\#826F66\] {
     background-color: #826F66;
   }
-  .bg-light {
-    background-color: var(--color-light);
+  .bg-green-50 {
+    background-color: var(--color-green-50);
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-\[url\(\.\.\/images\/public\/hero\.png\)\] {
-    background-image: url(../images/public/hero.png);
   }
   .bg-cover {
     background-size: cover;
@@ -328,8 +316,11 @@
   .px-17\.75 {
     padding-inline: calc(var(--spacing) * 17.75);
   }
-  .px-\[71px\] {
-    padding-inline: 71px;
+  .px-41 {
+    padding-inline: calc(var(--spacing) * 41);
+  }
+  .px-41\.25 {
+    padding-inline: calc(var(--spacing) * 41.25);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -337,23 +328,14 @@
   .py-3\.75 {
     padding-block: calc(var(--spacing) * 3.75);
   }
-  .py-15 {
-    padding-block: calc(var(--spacing) * 15);
-  }
-  .py-\[15px\] {
-    padding-block: 15px;
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .py-\[21\.84px\] {
     padding-block: 21.84px;
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
-  }
-  .pt-\[20px\] {
-    padding-top: 20px;
-  }
-  .pt-\[200px\] {
-    padding-top: 200px;
   }
   .text-center {
     text-align: center;
@@ -364,24 +346,12 @@
   .font-inter {
     font-family: var(--font-inter);
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-\[14px\] {
     font-size: 14px;
-  }
-  .leading-4 {
-    --tw-leading: calc(var(--spacing) * 4);
-    line-height: calc(var(--spacing) * 4);
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
@@ -390,14 +360,6 @@
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
-  }
-  .leading-\[4\] {
-    --tw-leading: 4;
-    line-height: 4;
-  }
-  .leading-\[40px\] {
-    --tw-leading: 40px;
-    line-height: 40px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -413,9 +375,6 @@
   }
   .text-\[\#826F66\] {
     color: #826F66;
-  }
-  .text-\[\#FFFDFB\] {
-    color: #FFFDFB;
   }
   .text-light {
     color: var(--color-light);
@@ -455,6 +414,26 @@
       width: calc(var(--spacing) * 105);
     }
   }
+  .md\:w-\[calc\(\(100\%-30px\)\/2\)\] {
+    @media (width >= 48rem) {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:gap-10\.5 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10.5);
+    }
+  }
   .md\:bg-\[url\(\.\.\/images\/public\/hero\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(../images/public/hero.png);
@@ -465,13 +444,41 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .lg\:grid {
+    @media (width >= 64rem) {
+      display: grid;
+    }
+  }
+  .lg\:w-\[calc\(\(100\%-90px\)\/4\)\] {
+    @media (width >= 64rem) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-5 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
 }
 .nav-link {
   font-size: 14px;
-  --tw-leading: calc(var(--spacing) * 5.5);
-  line-height: calc(var(--spacing) * 5.5);
   color: var(--color-Primary-warm);
   text-transform: capitalize;
+}
+.product-name {
+  padding-top: calc(var(--spacing) * 5.75);
+  font-size: 18px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  --tw-tracking: 6%;
+  letter-spacing: 6%;
+  color: #3A3845;
+  text-transform: uppercase;
 }
 @property --tw-border-style {
   syntax: "*";

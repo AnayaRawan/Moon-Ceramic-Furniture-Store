@@ -8,5 +8,8 @@
 }
 
 .nav-link {
-  @apply text-Primary-warm text-[14px] leading-5.5 capitalize;
+  @apply text-Primary-warm text-[14px] capitalize;
+}
+.product-name{
+  @apply font-semibold uppercase text-[18px] tracking-[6%] text-[#3A3845] pt-5.75;
 }
