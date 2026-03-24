@@ -223,6 +223,12 @@
   .h-full {
     height: 100%;
   }
+  .max-h-\[348\] {
+    max-height: 348;
+  }
+  .max-h-\[348px\] {
+    max-height: 348px;
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
@@ -329,6 +335,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
+  }
   .px-17 {
     padding-inline: calc(var(--spacing) * 17);
   }
@@ -340,6 +349,15 @@
   }
   .px-41\.25 {
     padding-inline: calc(var(--spacing) * 41.25);
+  }
+  .px-\[60px\] {
+    padding-inline: 60px;
+  }
+  .px-\[78\.5px\] {
+    padding-inline: 78.5px;
+  }
+  .px-\[px\] {
+    padding-inline: px;
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -364,6 +382,21 @@
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-12\.5 {
+    padding-top: calc(var(--spacing) * 12.5);
+  }
+  .pt-50 {
+    padding-top: calc(var(--spacing) * 50);
+  }
+  .pt-\[50\] {
+    padding-top: 50;
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
@@ -526,6 +559,11 @@
   .lg\:w-\[calc\(\(100\%-90px\)\/4\)\] {
     @media (width >= 64rem) {
       width: calc((100% - 90px) / 4);
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:px-41\.25 {
