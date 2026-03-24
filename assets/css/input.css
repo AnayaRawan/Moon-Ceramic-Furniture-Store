@@ -4,14 +4,16 @@
   --font-inter: "Inter";
   --font-heading: "EB Garamond";
   --color-Primary-warm: #3a3845;
+  --color-paragrah:#595667;
   --color-light: #fffdfb;
+  --color-bg-light:#F7F6F5;
 }
 
 .nav-link {
   @apply text-Primary-warm text-[14px] capitalize;
 }
 .product-name {
-  @apply font-semibold uppercase text-[18px] tracking-[6%] text-Primary-warm md:pt-5.75 pb-5;
+  @apply font-semibold uppercase text-[18px] tracking-[6%] text-Primary-warm pt-5.75 pb-5;
 }
 .section-title {
   @apply font-heading text-[30px] font-bold uppercase text-Primary-warm text-center pb-12;
