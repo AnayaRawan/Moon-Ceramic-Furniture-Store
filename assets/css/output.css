@@ -268,11 +268,17 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
+  }
+  .gap-9\.5 {
+    gap: calc(var(--spacing) * 9.5);
+  }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
-  .gap-18 {
-    gap: calc(var(--spacing) * 18);
+  .gap-\[38px\] {
+    gap: 38px;
   }
   .gap-y-10 {
     row-gap: calc(var(--spacing) * 10);
@@ -347,6 +353,9 @@
   .py-7\.5 {
     padding-block: calc(var(--spacing) * 7.5);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
@@ -358,12 +367,6 @@
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
-  }
-  .pb-20 {
-    padding-bottom: calc(var(--spacing) * 20);
-  }
-  .pb-\[64px\] {
-    padding-bottom: 64px;
   }
   .text-center {
     text-align: center;
@@ -510,24 +513,9 @@
       padding-inline: calc(var(--spacing) * 16);
     }
   }
-  .md\:px-17 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 17);
-    }
-  }
-  .md\:px-18 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 18);
-    }
-  }
   .md\:px-41\.25 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 41.25);
-    }
-  }
-  .md\:px-\[70px\] {
-    @media (width >= 48rem) {
-      padding-inline: 70px;
     }
   }
   .md\:py-20 {
@@ -538,6 +526,11 @@
   .lg\:w-\[calc\(\(100\%-90px\)\/4\)\] {
     @media (width >= 64rem) {
       width: calc((100% - 90px) / 4);
+    }
+  }
+  .lg\:px-41\.25 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 41.25);
     }
   }
 }
@@ -578,14 +571,33 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-.product-title {
+.product-details {
   font-size: 14px;
+  --tw-leading: calc(var(--spacing) * 5);
+  line-height: calc(var(--spacing) * 5);
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
-  --tw-tracking: 6%;
-  letter-spacing: 6%;
+  --tw-tracking: 0%;
+  letter-spacing: 0%;
   color: var(--color-Primary-warm);
   text-transform: uppercase;
+}
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: calc(var(--spacing) * 2.5);
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (width >= 48rem) {
+    column-gap: calc(var(--spacing) * 5);
+  }
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  @media (width >= 64rem) {
+    column-gap: calc(var(--spacing) * 7.5);
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
