@@ -220,8 +220,23 @@
   .h-99\.5 {
     height: calc(var(--spacing) * 99.5);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-full {
     height: 100%;
+  }
+  .max-h-95 {
+    max-height: calc(var(--spacing) * 95);
+  }
+  .max-h-95\.75 {
+    max-height: calc(var(--spacing) * 95.75);
+  }
+  .max-h-143 {
+    max-height: calc(var(--spacing) * 143);
+  }
+  .max-h-143\.75 {
+    max-height: calc(var(--spacing) * 143.75);
   }
   .max-h-\[348\] {
     max-height: 348;
@@ -229,8 +244,29 @@
   .max-h-\[348px\] {
     max-height: 348px;
   }
+  .max-h-\[383px\] {
+    max-height: 383px;
+  }
+  .max-h-\[575\.0000000000005\] {
+    max-height: 575.0000000000005;
+  }
+  .max-h-\[575px\] {
+    max-height: 575px;
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
+  }
+  .w-138 {
+    width: calc(var(--spacing) * 138);
+  }
+  .w-138\.75 {
+    width: calc(var(--spacing) * 138.75);
+  }
+  .w-\[55\] {
+    width: 55;
+  }
+  .w-\[555px\] {
+    width: 555px;
   }
   .w-full {
     width: 100%;
@@ -420,6 +456,9 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[28px\] {
     font-size: 28px;
   }
@@ -509,6 +548,11 @@
   .md\:h-160\.5 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 160.5);
+    }
+  }
+  .md\:max-h-95\.75 {
+    @media (width >= 48rem) {
+      max-height: calc(var(--spacing) * 95.75);
     }
   }
   .md\:w-105 {
