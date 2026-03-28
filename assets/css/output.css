@@ -435,6 +435,9 @@
   .py-\[21\.84px\] {
     padding-block: 21.84px;
   }
+  .py-\[48px\] {
+    padding-block: 48px;
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -703,6 +706,16 @@
   .lg\:py-12 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
 }
