@@ -41,13 +41,13 @@
         </div>
     </header>
     <main>
-        <div class="hero md:bg-[url(../images/public/contact-hero.png)] bg-cover  md:h-160.5">
+        <div class="hero md:bg-[url(../images/public/contact-hero.png)] bg-cover">
             <div class="hero-img h-99.5 block md:hidden">
                 <img src="./assets/images/public/contact-hero.png" alt="hero image" class="w-full h-full object-cover">
             </div>
 
             <div
-                class="md:ml-41.25 h-88.5 md:h-160.5 md:w-105 bg-Primary-warm flex flex-col md:gap-10.5 gap-7.5 justify-center items-center text-center px-8">
+                class="md:ml-41.25 h-88.5 md:h-136.25 md:w-105 bg-Primary-warm flex flex-col md:gap-10.5 gap-7.5 justify-center items-center text-center px-8">
                 <img src="./assets/images/public/brownLogo.svg" alt="">
                 <div class="hero-text flex flex-col gap-7.5">
                     <h1 class="pt-5 text-light font-bold font-heading text-4xl leading-10 tracking-[4%]">CONTACT US</h1>
@@ -73,6 +73,94 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section py-10 md:py-12.5">
+            <div class="container mx-auto">
+                <div class="grid gap-12.5">
+                    <div class="contact-text flex flex-col gap-4.5 text-center">
+                        <h2
+                            class="uppercase font-heading font-bold text-center text-[36px] leading-12 tracking-[2%] text-Primary-warm">
+                            Get in touch with us
+                        </h2>
+                        <p class="text-paragrah leading-6 text-[16px] font-normal mx-auto max-w-125">Lorem ipsum dolor
+                            sit
+                            amet consectetur
+                            adipiscing eli mattis sit phasellus mollis sit aliquam sit
+                            nullam.</p>
+                    </div>
+                    <div class="contact-info flex flex-col gap-7.5 justify-center items-center">
+                        <div class="text-center">
+                            <h4 class="mb-3 text-[14px] text-paragrah font-semibold leading-5">Office Hours :</h4>
+                            <h5 class="font-semibold text-[#C69B7B] leading-5 text-[14px]">Monday - Friday 8:00 am to
+                                5:00
+                                pm</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="mb-3 text-[14px] text-paragrah font-semibold leading-5">Email:</h4>
+                            <h5 class="font-semibold text-[#C69B7B] leading-5 text-[14px]">contact@company.com</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="mb-3 text-[14px] text-paragrah font-semibold leading-5">Phone:</h4>
+                            <h5 class="font-semibold text-[#C69B7B] leading-5 text-[14px]">(414) 687 - 5892</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="mb-3 text-[14px] text-paragrah font-semibold leading-5">Location :</h4>
+                            <h5 class="font-semibold text-[#C69B7B] leading-5 text-[14px]">59 Middle Point Rd
+                                <br>San Francisco, 80412
+                            </h5>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="contact-form mt-10 grid grid-cols-1 sm:grid-cols-6 gap-x-5 gap-y-7.5">
+                            <div class="sm:col-span-3">
+                                <label for="name" class="block text-sm/6 font-medium text-Primary-warm mb-3">
+                                    Name</label>
+                                <div class="mt-2">
+                                    <input id="name" type="text" name="name" placeholder="Samatha Clarken"
+                                        class="block w-full px-4 py-5.25 text-base text-Primary-warm outline-1 -outline-offset-1 outline-Primary-warm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-Primary-warm sm:text-sm/6" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-3">
+                                <label for="email"
+                                    class="block text-sm/6 font-medium text-Primary-warm mb-3">Email</label>
+                                <div class="mt-2">
+                                    <input id="email" type="email" name="email" placeholder="example@youremail.com"
+                                        class="block w-full px-4 py-5.25 text-base text-Primary-warm outline-1 -outline-offset-1 outline-Primary-warm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-Primary-warm sm:text-sm/6" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-3">
+                                <label for="phone" class="block text-sm/6 font-medium text-Primary-warm mb-3">
+                                    Phone</label>
+                                <div class="mt-2">
+                                    <input id="phone" type="tel" name="phone" placeholder="(123) 456 - 7890"
+                                        class="block w-full px-4 py-5.25 text-base text-Primary-warm outline-1 -outline-offset-1 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 outline-Primary-warm sm:text-sm/6" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-3">
+                                <label for="company"
+                                    class="block text-sm/6 font-medium text-Primary-warm mb-3">Company</label>
+                                <div class="mt-2">
+                                    <input id="company" type="text" name="company" placeholder="Moon"
+                                        class="block w-full px-4 py-5.25 text-base text-Primary-warm outline-1 -outline-offset-1 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 outline-Primary-warm sm:text-sm/6" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-6">
+                                <label for="message"
+                                    class="block text-sm/6 font-medium text-Primary-warm mb-3">Message</label>
+                                <div class="mt-2">
+                                    <textarea name="" id="message"
+                                        class="block w-full px-4 py-5.25 text-base text-Primary-warm outline-1 -outline-offset-1 outline-Primary-warm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-Primary-warm sm:text-sm/6">Type your message here...</textarea>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="sm:col-span-6 uppercase bg-Primary-warm py-3.5 px-6 text-[12px] font-semibold text-white shadow-md">
+                                Send message ->
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
